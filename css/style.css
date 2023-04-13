@@ -1,0 +1,451 @@
+
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --font-menu: 'Noto Serif', serif;
+    --cor-principal:#FF6348;
+    --cor-botao: #fc320f;
+    --cor-botao-hover: #f82500;
+    --cor-fundo: #D9FBFF;
+    --preto: #000;
+    --branco: #fff;
+    --font-banner-box: 'Playfair Display', serif;
+    --font-formulario: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img, picture, figure{
+    max-width: 100%;
+
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+
+}
+.container-site{
+    background-color: var(--cor-fundo);
+}
+
+.faixa01{
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor-principal);
+}
+.menu01{
+    width: 1280px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+.logo {
+    width: 290px;
+    height: 100px;
+    float: left;
+}
+
+.formulario-busca{
+    float: left;
+    width: 630px;
+    height: 100px;
+}
+
+#buscar{
+    text-decoration: none;
+    border: none;
+    width: 560px;
+    padding: 11px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: var(--font-menu);
+
+}
+
+.formulario-busca input:focus, select:focus{
+    box-shadow: none;
+    border: 0 none;
+    outline: 0;
+}
+
+.botao-buscar{
+    width: 35px;
+    margin-top: 30px;
+    padding: 5px 5px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 0 none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.icon-buscar{
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+
+.lista-de-desejos{
+    width: 122px;
+    height: 59px;
+    margin-top: 20px;
+    margin-left: 27px;
+    float: left;
+}
+
+.icon-ld{
+    float: left;
+    margin-left: 50px;
+}
+
+.txt-ld{
+    float: left;
+    font-family: var(--font-menu);
+    font-size: 1em;
+    color: var(--preto);
+
+}
+
+.compras {
+    width: 71px;
+    height: 100px;
+    float: left;
+    margin-left: 26px;
+}
+
+.icon-compras{
+    width: 45px;
+    height: 45px;
+    margin-top: 24px;
+}   
+
+.login{
+    width: 57px;
+    height: 100px;
+    float: left;
+    margin-left: 23px;
+}
+
+.icon-login{
+    width: 30px;
+    height: 30px;
+    margin-top: 1.5em;
+    margin-left: 0.9em;
+}
+
+.txt-login{
+    font-family: var(--font-menu);
+    color: var(--preto);
+    font-size: 1.1em;
+    margin-left: 3px;
+}
+
+.faixa02{
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+
+.menu02{
+    width: 1280px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.categorias{
+    width: 134px;
+    height: 30px;
+    margin-top: 0.63em;
+    float: left;
+}
+
+.icon-ctg{
+    float: left;
+}
+
+.txt-ctg{
+    font-family: var(--font-menu);
+    color: var(--branco);
+    font-size: 1.1em;
+    float: left;
+    margin-top: 0.31em;
+}
+
+.nav-menu{
+    width: 1083px;
+    height: 60px;
+    float: left;
+}
+
+.nav-menu li{
+    width: 196px;
+    height: 60px;
+    list-style: none;
+    float: left;
+    padding-left: 1.25em;
+}
+.nav-menu li:first-child{
+    margin-left: 4em;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: var(--branco);
+    font-family: var(--font-menu);
+    font-size: 1.1em;
+}
+
+.nav-menu img{
+    margin: 0.75em 0;
+    float: left;
+}
+.nav-menu span{
+    padding-left: 0.62em;
+    padding-top: 0.9em;
+    float: left;
+}
+
+.caixa-banner a{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--cor-botao);
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-family: var(--font-menu);
+}
+
+.caixa-banner a:hover{
+    background-color: var(--cor-botao-hover);
+}
+
+.main-site{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.main-categorias{
+    width: 1280px;
+    float: left;
+}
+
+.main-categorias h2{
+    font-family: var(--font-banner-box);
+    font-weight: 700;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 0.42em;
+    color: var(--preto);
+}
+
+.ctg-linha{
+    margin-top: 1.5em;
+    margin-right: 3em;
+}
+
+.card-text{
+    font-family: var(--font-banner-box);
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--preto);
+}
+
+.promocoes{
+    width: 1280px;
+}
+
+.promocoes h2{
+    font-family: var(--font-banner-box);
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    color: var(--preto);
+}
+.promo-linha{
+    width: 1280px;
+    height: 420px;
+}
+.promo-card01, .promo-card02, .promo-card03, .promo-card04{
+    box-sizing: border-box;
+    float:left;
+    width: 610px;
+    height: 400px;
+    margin: 0.21em 0.44em;
+    border: 2px solid #FF6348;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.promo-card01{
+    background: url(../img/pexels-rangga-aditya-armien-189199\(1\).jpg);
+}
+.promo-card02{
+    background: url(../img/pexels-pavel-danilyuk-6443375.jpg);
+}
+.promo-card03{
+    background: url(../img/pexels-donald-tong-23475.jpg);
+}
+.promo-card04{
+    background: url(../img/pexels-lukas-292999.jpg);
+}
+.promo-box{
+    position: absolute;
+    width: 197px;
+    height: 145px;
+    left: 22.6841em;
+    top: 14.1282em;
+    background: rgba(0, 0, 0, 0.47);
+    border-radius: 10px;
+}
+
+.promo-box h2{
+    width: 140px;
+    height: 52px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 1.31em;
+    margin-top: 0.5em;
+    margin-left: 2em;
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--branco);
+}
+
+.promo-box p{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 1em;
+    padding-left: 0.5em;
+    margin-bottom: 0.5em;
+    color: #FFFFFF;
+}
+
+.preco-cortado{
+    text-decoration: line-through;
+}
+
+.promo-box a{
+    width: 58px;
+    height: 21px;
+    background: #FF4120;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1em;
+    text-align: center;
+    color: var(--branco);
+    margin-left: 6.88em;
+}
+.cadastro-email{
+    width: 1280px;
+    height: 260px;
+}
+
+.cadastro-email h2{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2em;
+    line-height: 1em;
+    margin-top: 0.5em;
+    text-align: center;
+    color: var(--preto);
+}
+.cadastro-email p{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-top: 1.2em;
+    line-height: 1em;
+    text-align: center;
+    color: var(--preto);
+}
+.formulario-promocoes{
+    width: 100%;
+    margin: 0.6em 1em;
+    float: left;
+
+}
+.nome{
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+.email{
+    width: 48%;
+    float: right;
+    margin-left: 2%;
+}
+
+label{
+    width: 100%;
+    font-family: var(--font-formulario);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.8em;
+    line-height: 1em;
+    margin-bottom: 0.8em;
+    color: #000000;
+}
+.nome input{
+    width: 100%;
+    padding: 0.4em;
+    font-family: var(--font-formulario);
+}
+.email input{
+    width: 100%;
+    padding: 0.4em;
+    font-family: var(--font-formulario);
+}
+
+.confirmar-promocao{
+    width: 100%;
+    float: left;
+    padding-left: 26.4em;
+    padding-top: 2em; 
+}
+
+.confirmar-promocao label{
+    width: 93%;
+}
+.botao-enviar{
+    width: 87px;
+    height: 30px;
+    background: #FF4120;
+    border-radius: 5px;
+    border: none;
+    margin-left: 45em;
+    margin-top: 0.5em;
+    font-family: var(--font-banner-box);
+    color: var(--branco);
+}
+
+.footer{    
+    width: 100%;
+    height: 100px;
+    background-color: #00000023;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.8em;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #00158dc9;
+}
