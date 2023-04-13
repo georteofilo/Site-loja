@@ -415,23 +415,59 @@ label{
 }
 
 .confirmar-promocao{
-    width: 100%;
-    float: left;
-    padding-left: 26.4em;
-    padding-top: 2em; 
+    width: 400px;
+    height:40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 1em;
+    left: 32%;
+    cursor: pointer;
 }
 
-.confirmar-promocao label{
-    width: 93%;
+.confirmar-promocao input{
+    display: none;
 }
+.confirmar-promocao label{
+    cursor: pointer;
+}
+
+
+  
+.confirmar-promocao label {
+    margin-left: 10px;
+}
+  
+  
+.confirmar-promocao {
+    margin-bottom: 10px;
+  }
+
+.confirmar-promocao input + label::before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: var(--branco);
+    border: 1px solid var(--cor-botao);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.confirmar-promocao input:checked + label::before{
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='12' height='12' fill='%23FF4120'/%3E%3Cpath d='M2 6L5 9L10 3' stroke='white' stroke-linecap='round'/%3E%3C/svg%3E");
+} 
+
 .botao-enviar{
     width: 87px;
     height: 30px;
     background: #FF4120;
     border-radius: 5px;
     border: none;
-    margin-left: 45em;
-    margin-top: 0.5em;
+    position: absolute;
+    top: 183em;
+    left: 47%;
     font-family: var(--font-banner-box);
     color: var(--branco);
 }
