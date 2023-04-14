@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
+/* Variaveis */
 :root{
     --font-menu: 'Noto Serif', serif;
     --cor-principal:#FF6348;
@@ -14,6 +16,7 @@
     --branco: #fff;
     --font-banner-box: 'Playfair Display', serif;
     --font-formulario: 'Roboto', sans-serif;
+    --font-corpo: 'PT Serif', serif;
 }
 
 body{
@@ -133,6 +136,7 @@ a{
     height: 100px;
     float: left;
     margin-left: 23px;
+    cursor: pointer;
 }
 
 .icon-login{
@@ -393,7 +397,7 @@ a{
     margin-left: 2%;
 }
 
-label{
+.main-site label{
     width: 100%;
     font-family: var(--font-formulario);
     font-weight: 300;
@@ -475,7 +479,8 @@ label{
 .footer{    
     width: 100%;
     height: 100px;
-    background-color: #00000023;
+    background-color: var(--preto);
+    color: var(--branco);
     text-align: center;
     padding-top: 20px;
     font-size: 0.8em;
@@ -483,5 +488,128 @@ label{
 
 .footer a{
     text-decoration: none;
-    color: #00158dc9;
+    color: rgb(255, 255, 255);
 }
+
+.container-login{
+    font-family: var(--font-corpo);
+}
+.main-login{
+    width: 66.6666vw;
+    height: 72vh;
+    position: relative;
+    left: 16.5vw;
+    color: #000;
+    font-family: var(--font-corpo);
+}
+
+.main-login h2{
+    font-size: 2.4em;
+    margin-top: 0.5em;
+    margin-left: 2em;
+}
+
+.box-logar{
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+}
+.box-logar h2{
+    width: 100%;
+    float: left;
+}
+
+.logar, .cadastrar-login{
+    width: 45%;
+    float: left;
+    margin: 0 2%;
+}
+
+.separador-logar{
+    float: left;
+    height: 35vh;
+    margin-top: 1.4em;
+    border-right: 2px solid #dddddd;
+    background-color: #000;
+}
+
+
+.logar h3, .cadastrar-login h3{
+    margin:0.5em 0;
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 1em;
+}
+
+.form-login, .form-cadastro{
+    float: left;
+}
+
+.form-login label, .form-cadastro label{
+    float: left;
+    width: 100%;
+    margin: 0.5em;
+    font-size: 0.8em;
+}
+.form-login input, .form-cadastro input{
+    float: left;
+    margin: 1% 2%;
+    width: 96%;
+    padding: 0.5em;
+    font-size: 0.8em;
+    border: 1px solid rgb(212, 212, 212);
+    outline: 0;
+    box-shadow: 0 0 2px black;
+}
+
+.form-login input:focus{
+    border: 1px solid var(--cor-principal);
+    appearance: none;
+}
+
+.form-login button, .form-cadastro button{
+    float: left;
+    padding: 0.2em 1.2em;
+    border: 0;
+    background-color: #f82500;
+    border-radius: 5px;
+    margin: 4% 37%;
+    font-size: 1.4em;
+    color: #fff;
+}
+.form-login a{
+    float: right;
+    font-size: 0.8em;
+    color: #888787;
+}
+
+.form-login a:hover{
+    text-decoration: underline;
+}
+
+.separador-horizontal{
+    float: left;
+    width: 60vh;
+    margin-top: 3%;
+    margin-left: 22%;
+    border-bottom: 2px solid #dddddd;
+    background-color: #000;
+}
+.box-logar h3{
+    float: left;
+    font-size: 1em;
+    margin: 2% 30%;
+}   
+
+.redes-sociais{
+    width: 100%;
+    float: left;
+    margin-left: 43%;
+}
+
+.google, .facebook, .twitter {
+    width: 30px;
+    float: left;
+    margin-left: 1% ;
+}
+

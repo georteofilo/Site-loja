@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
     <title>All Style - Modas Masculinas e Femininas</title>
 </head>
 <body>
@@ -30,8 +31,8 @@
                     <div class="compras">
                         <a href="#"><img src="img/icon-compras.png" class="icon-compras"></a>
                     </div>
-                    <a href="#">
-                        <div class="login">
+                    <a href="login.html">
+                        <div class="login" id="login">
                             <img src="img/icon-login.png" class="icon-login">
                             <span class="txt-login">Entrar</span>
                         </div>
@@ -40,13 +41,15 @@
             </div>
             <div class="faixa02">
                 <div class="menu02">
-                    <div class="categorias">
-                        <img class="icon-ctg" src="img/icon-categorias.png">
-                        <span class="txt-ctg">Categorias</span>
-                    </div>
+                    <a href="#ctg">
+                        <div class="categorias">
+                            <img class="icon-ctg" src="img/icon-categorias.png">
+                            <span class="txt-ctg">Categorias</span>
+                        </div>
+                    </a href="#ctg">
                     <nav class="nav-menu">
                         <ul>
-                            <li><a href="#"><img src="img/icon-promocoes.png"><span>Promoções</span></a></li>
+                            <li><a href="#promocoes"><img src="img/icon-promocoes.png"><span>Promoções</span></a></li>
                             <li><a href="#"><img src="img/icon-masculino.png"><span>Masculino</span></a></li>
                             <li><a href="#"><img src="img/icon-feminino.png"><span>Feminino</span></a></li>
                             <li><a href="#"><img src="img/icon-acessorios.png"><span>Acessorios</span></a></li>
@@ -110,7 +113,7 @@
             </div>        
         </header>
         <main class="main-site">
-            <section class="main-categorias">
+            <section id="ctg" class="main-categorias">
                 <h2>Categorias</h2>
                 <div class="ctg-linha">
                     <div class="container text-center">
@@ -225,7 +228,7 @@
                       </div>
                 </div>
             </section>
-            <section class="promocoes">
+            <section id="promocoes" class="promocoes">
                 <h2>Promoções</h2>
                 <div class="promo-linha">
                     <div class="promo-card01">
