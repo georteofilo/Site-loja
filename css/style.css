@@ -11,7 +11,7 @@
     --cor-principal:#FF6348;
     --cor-botao: #fc320f;
     --cor-botao-hover: #f82500;
-    --cor-fundo: #D9FBFF;
+    --cor-fundo: #fff;
     --preto: #000;
     --branco: #fff;
     --font-banner-box: 'Playfair Display', serif;
@@ -435,8 +435,6 @@ a{
 .confirmar-promocao label{
     cursor: pointer;
 }
-
-
   
 .confirmar-promocao label {
     margin-left: 10px;
@@ -484,6 +482,7 @@ a{
     text-align: center;
     padding-top: 20px;
     font-size: 0.8em;
+    float: left;
 }
 
 .footer a{
@@ -494,16 +493,15 @@ a{
 .container-login{
     font-family: var(--font-corpo);
 }
+
 .main-login{
     width: 66.6666vw;
-    height: 72vh;
-    position: relative;
-    left: 16.5vw;
+    margin-left: 17%;
     color: #000;
     font-family: var(--font-corpo);
 }
 
-.main-login h2{
+.main-login h2, .main-wishlist h2{
     font-size: 2.4em;
     margin-top: 0.5em;
     margin-left: 2em;
@@ -562,7 +560,7 @@ a{
     box-shadow: 0 0 2px black;
 }
 
-.form-login input:focus{
+.form-login input:focus, .form-cadastro input:focus{
     border: 1px solid var(--cor-principal);
     appearance: none;
 }
@@ -595,6 +593,7 @@ a{
     border-bottom: 2px solid #dddddd;
     background-color: #000;
 }
+
 .box-logar h3{
     float: left;
     font-size: 1em;
@@ -610,6 +609,61 @@ a{
 .google, .facebook, .twitter {
     width: 30px;
     float: left;
-    margin-left: 1% ;
+    margin-left: 1%;
 }
 
+.main-wishlist{
+    width: 66.6666%;
+    float: left;
+    color: #000;
+    font-family: var(--font-corpo);
+    margin-left:14%;
+}
+.main-wishlist .separador-horizontal{
+    float: left;
+    width: 60vh;
+    margin:1% 0;
+    margin-left: 28%;
+    border-bottom: 2px solid #dddddd;
+    background-color: #000;
+}
+
+.produto{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+}
+
+.produto-img{
+    width: 20%;
+    border: 1px solid black;
+    float: left;
+    padding: 1%;
+}
+
+.produto-descricao{
+    width: 60%;
+    height: 12.8em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    float: left;
+    padding: 1%;
+}
+
+.bt-comprar{
+    width: 20%;
+    height: 12.8em;
+    border: 1px solid black;
+    float: left;
+}
+
+.bt-comprar button{
+    padding: 0.5em 2em;
+    border: 0;
+    background-color: #f82500;
+    border-radius: 5px;
+    margin: 35% 8%;
+    font-size: 1.4em;
+    color: #fff;
+}
